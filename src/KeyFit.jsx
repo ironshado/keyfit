@@ -7,7 +7,8 @@ import { useState, useRef, useCallback } from "react";
 //    1. Set your Gemini key: const GEMINI_API_KEY = "AIza...your key..."
 //    2. In callAI() comment out ANTHROPIC block, uncomment GEMINI block.
 // ─────────────────────────────────────────────────────────────────────────────
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_KEY;
+const GEMINI_API_KEY = "AQ.Ab8RN6Ls465llJveUSElgbUxuEE6whMkeMrQ6MH-EqaWADy6pA";
+console.log("KEY:", GEMINI_API_KEY);
 
 async function callAI(imageBase64, imageMimeType, prompt) {
   // ── ANTHROPIC (active in Claude artifact) ──────────────────────────────
